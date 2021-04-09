@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <H2>Payment form example</H2>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    Some fields form missing
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Card #</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Card #"
+                                value="xxxxxxxxxxx" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault02">CVC #</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="CVC #"
+                                value="xxxxxxxxxxx" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefaultUsername">Amount</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                    placeholder="Amount" aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Firt Name</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Firt name"
+                                value="" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Last Name</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name"
+                                value="" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                                required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">State</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Postal Code</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Visa</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">MasterCard</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline3" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline3">Dinners</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline4" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline4">American</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <h9>Add any notes here.</h9>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="form-group">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
